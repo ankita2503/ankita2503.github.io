@@ -1,187 +1,704 @@
-<!DOCTYPE HTML>
-<!--
-	Miniport by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Senior Java Cloud Developer</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ankita Singh — Senior Software Engineer</title>
+<meta name="description" content="Ankita Singh — Senior Software Engineer with 11+ years building scalable backend systems in Java, Spring, distributed systems, cloud & Agentic AI." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+<style>
+  :root {
+    --bg: #08090a;
+    --bg-soft: #0d0f11;
+    --card: #0f1113;
+    --card-hover: #14171a;
+    --border: #1e2226;
+    --border-soft: #17191c;
+    --text: #fafafa;
+    --muted: #9aa1a9;
+    --muted-2: #6b7178;
+    --accent: #3b82f6;
+    --accent-2: #60a5fa;
+    --green: #22c55e;
+    --amber: #f59e0b;
+    --grid: rgba(255, 255, 255, 0.025);
+    --max: 920px;
+  }
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="#top">Top</a></li>
-					<li><a href="#work">Work</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
 
-		<!-- Home -->
-			<article id="top" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/AnkitaSingh.jpg" alt="" /></span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1>Hi. I'm <strong>Ankita Singh</strong>.</h1>
-							</header>
-							<p>I am a Senior Java and Cloud developer with a wide range of skills that I have gained through years of experience in the field. My expertise includes languages such as Java, SQL, XML HTML. I have utilized several java framworkds such as Springboot, Spring MVC, Spring Cloud, WebFlux, Hibernate, Camunda BPMN, and Struts. I have worked on several cloud computing platform that involved AWS, GCP, Dockers, Kubernetes together with databased like Experience with databases such as Oracle, MySQL, PostgreSQL, and MongoDB. I am passionate about staying up-to-date with the latest technologies and using my knowledge to develop innovative solutions for my clients.	
-.</p>
-							<a href="#work" class="button large scrolly">Learn about what I do</a>
-						</div>
-					</div>
-				</div>
-			</article>
+  html { scroll-behavior: smooth; }
 
-		<!-- Work -->
-			<article id="work" class="wrapper style2">
-				<div class="container">
-					<header>
-						<h2>Here's all the stuff I do.</h2>
-					</header>
-					<div class="row aln-center">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon featured fa-comments"></span>
-								<h3>End to End Web Development</h3>
-								<p>With extensive Web Development using Java, Springboot, Spring Cloud, and Webflux, I am committed to building robust and scalable web applications that deliver exceptional user experiences. With this experience, I am able to create highly functional and responsive web applications that can handle large amounts of traffic.</p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon solid featured fa-camera-retro"></span>
-								<h3>AWS Cloud Infrastructure Setup</h3>
-								<p>As a cloud infrastructure expert with extensive experience working on AWS, I am committed to delivering high-quality solutions that help my clients leverage the power of cloud computing. With a deep understanding of AWS architecture and services, I am able to provide comprehensive solutions for AWS cloud infrastructure setup.</p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon featured fa-thumbs-up"></span>
-								<h3>Build and Test Automation</h3>
-								<p>As a build and test automation expert, I am committed to streamlining software development processes and ensuring that software is delivered quickly and reliably. With extensive experience in build and test automation, I am able to provide comprehensive solutions that help organizations optimize their development workflows.</p>
-							</section>
-						</div>
-					</div>
-					<footer>
-						<p>Is customer satisfaction the first priority??</p>
-						<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
-					</footer>
-				</div>
-			</article>
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
 
-		<!-- Portfolio -->
-			<article id="portfolio" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Here’s some stuff I made recently.</h2>
-						<p>Whether you need assistance with Java development, cloud-based solutions, or any other technology-related project, I am here to help. Feel free to contact me to learn more about how I can help you achieve your goals.</p>
-					</header>
-					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="https://github.com/ankita2503/Simulation-Switchboard">Docker Simulation</a></h3>
-								<p>APIs that can effectively manage the creation and monitoring of Docker containers for incoming simulation tasks, enabling each job to execute in its own container. Containers are deleted once the computation is completed.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-								<h3><a href="https://github.com/ankita2503/JavaDesignPatterns">Java Design Pattern</a></h3>
-								<p>This project lists solutions that leverage the power of design patterns including creational, structural, and behavioral patterns and how to use these patterns to create efficient, scalable, and maintainable applications.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-								<h3><a href="https://github.com/ankita2503/DSA">DSA</a></h3>
-								<p>Throughout the project, I was focused on finding efficient solutions that could handle large amounts of data and provide accurate results with a focus on optimizing the performance of the algorithms.</p>
-							</article>
-						</div>
-					</div>
-					<footer>
-						<p>Is customer satisfaction the first priority?</p>
-						<a href="#contact" class="button large scrolly">Get in touch with me</a>
-					</footer>
-				</div>
-			</article>
+  /* ambient glow */
+  body::before {
+    content: "";
+    position: fixed;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 900px;
+    height: 600px;
+    background: radial-gradient(ellipse at center, rgba(59,130,246,0.10), transparent 65%);
+    pointer-events: none;
+    z-index: 0;
+  }
 
-		<!-- Contact -->
-			<article id="contact" class="wrapper style4">
-				<div class="container medium">
-					<header>
-						<h2>Have me make stuff for you.</h2>
-					</header>
-					<div class="row">
-						<div class="col-12">
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Subject" />
-									</div>
-									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
-											<li><input type="reset" value="	 Form" class="alt" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</div>
-						<div class="col-12">
-							<hr />
-							<h3>Find me on ...</h3>
-							<ul class="social">
-								<li><a href="https://www.linkedin.com/in/ankita-singh2/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/ankita2503" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<!--
-								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
-								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
-								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
-								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
-								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
-								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
-								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
-								-->
-							</ul>
-							<hr />
-						</div>
-					</div>
-					<footer>
-						<ul id="copyright">
-							<li>&copy;All rights reserved.</li><li>By: <a href="http://html5up.net">Ankita Singh</a></li>
-						</ul>
-					</footer>
-				</div>
-			</article>
+  .wrap {
+    position: relative;
+    z-index: 1;
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+  a { color: inherit; text-decoration: none; }
 
-	</body>
+  /* ---------- HERO ---------- */
+  .hero {
+    padding: 120px 0 40px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 40px;
+    align-items: start;
+  }
+  .hero h1 {
+    font-size: clamp(2.6rem, 6vw, 4.2rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.02;
+  }
+  .hero h1 .name {
+    background: linear-gradient(120deg, #60a5fa, #3b82f6 60%, #2563eb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .hero .role {
+    margin-top: 20px;
+    font-size: clamp(1rem, 2.2vw, 1.35rem);
+    font-weight: 600;
+    color: #e5e7eb;
+    letter-spacing: -0.01em;
+    max-width: 560px;
+  }
+  .hero .bio {
+    margin-top: 20px;
+    color: var(--muted);
+    font-size: 1.02rem;
+    max-width: 540px;
+  }
+  .hero .journey {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 22px;
+    color: var(--accent-2);
+    font-weight: 600;
+    font-size: 0.98rem;
+    cursor: pointer;
+    transition: gap .2s ease;
+  }
+  .hero .journey:hover { gap: 14px; }
+
+  .socials {
+    display: flex;
+    gap: 12px;
+    margin-top: 28px;
+  }
+  .socials a {
+    width: 42px; height: 42px;
+    display: grid; place-items: center;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 11px;
+    color: var(--muted);
+    transition: all .18s ease;
+  }
+  .socials a:hover {
+    color: var(--text);
+    border-color: #2e343a;
+    transform: translateY(-2px);
+    background: var(--card-hover);
+  }
+  .socials svg { width: 19px; height: 19px; }
+
+  .avatar {
+    width: 180px; height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    box-shadow: 0 0 0 6px rgba(59,130,246,0.06), 0 20px 60px rgba(0,0,0,0.5);
+    flex-shrink: 0;
+  }
+  .avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  /* ---------- SECTIONS ---------- */
+  section { padding: 44px 0; }
+  .sec-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 22px;
+  }
+  .eyebrow {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--muted);
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 5px 14px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+  }
+
+  /* ---------- EXPERIENCE / CARDS ---------- */
+  .card {
+    position: relative;
+    background:
+      linear-gradient(var(--grid) 1px, transparent 1px) 0 0 / 100% 34px,
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px) 0 0 / 34px 100%,
+      var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin-bottom: 14px;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .card:hover { border-color: #2a2f35; transform: translateY(-2px); }
+  /* corner plus marks */
+  .card::before, .card::after {
+    content: "+";
+    position: absolute;
+    color: var(--muted-2);
+    font-size: 14px;
+    line-height: 1;
+    opacity: .5;
+  }
+  .card::before { top: 8px; left: 10px; }
+  .card::after { bottom: 8px; right: 10px; }
+
+  .exp-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .logo {
+    width: 46px; height: 46px;
+    border-radius: 11px;
+    display: grid; place-items: center;
+    font-weight: 800;
+    font-size: 1rem;
+    color: #fff;
+    flex-shrink: 0;
+  }
+  .exp-main { flex: 1; min-width: 0; }
+  .exp-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .exp-head .company { font-weight: 700; font-size: 1.05rem; }
+  .badge {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 3px 9px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .badge.working { color: var(--green); background: rgba(34,197,94,0.1); border: 1px solid rgba(34,197,94,0.25); }
+  .badge.past { color: var(--muted); background: rgba(255,255,255,0.04); border: 1px solid var(--border); }
+  .badge .dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+  .exp-role { color: var(--muted); font-size: 0.96rem; margin-top: 4px; }
+  .exp-meta {
+    text-align: right;
+    flex-shrink: 0;
+    font-size: 0.82rem;
+  }
+  .exp-meta .date { color: #cbd5e1; font-weight: 600; }
+  .exp-meta .loc { color: var(--muted-2); margin-top: 2px; }
+
+  /* ---------- SKILLS ---------- */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(58px, 1fr));
+    gap: 12px;
+  }
+  .skill {
+    aspect-ratio: 1;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    font-size: 1.7rem;
+    transition: all .18s ease;
+    position: relative;
+    cursor: default;
+  }
+  .skill:hover { transform: translateY(-3px); border-color: #2e343a; background: var(--card-hover); }
+  .skill i { font-size: 1.9rem; }
+  .skill .tip {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1a1d20;
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 4px 9px;
+    border-radius: 7px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .15s ease;
+    z-index: 5;
+  }
+  .skill:hover .tip { opacity: 1; }
+  .skill .txt { font-size: 0.62rem; font-weight: 700; color: var(--muted); letter-spacing: 0.02em; }
+
+  /* ---------- PROJECTS ---------- */
+  .projects-head { text-align: center; margin-bottom: 34px; }
+  .projects-head h2 {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-top: 8px;
+  }
+  .projects-head p { color: var(--muted); max-width: 480px; margin: 12px auto 0; }
+  .proj-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+  .proj {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    transition: all .2s ease;
+    min-height: 180px;
+  }
+  .proj:hover { border-color: #2e343a; transform: translateY(-3px); background: var(--card-hover); }
+  .proj-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+  .proj-icon {
+    width: 40px; height: 40px; border-radius: 10px;
+    background: rgba(59,130,246,0.12);
+    border: 1px solid rgba(59,130,246,0.2);
+    display: grid; place-items: center; color: var(--accent-2);
+  }
+  .proj-icon svg { width: 20px; height: 20px; }
+  .proj-stars { color: var(--muted); font-size: 0.82rem; display: inline-flex; align-items: center; gap: 5px; }
+  .proj h3 { font-size: 1.1rem; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 8px; word-break: break-word; }
+  .proj p { color: var(--muted); font-size: 0.9rem; flex: 1; }
+  .proj-foot { display: flex; align-items: center; justify-content: space-between; margin-top: 16px; }
+  .proj-lang { display: inline-flex; align-items: center; gap: 7px; font-size: 0.82rem; color: var(--muted); }
+  .lang-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
+  .proj-links { display: flex; gap: 8px; }
+  .proj-links a {
+    width: 32px; height: 32px; border-radius: 8px;
+    display: grid; place-items: center;
+    background: var(--bg-soft); border: 1px solid var(--border);
+    color: var(--muted); transition: all .15s ease;
+  }
+  .proj-links a:hover { color: var(--text); border-color: #2e343a; }
+  .proj-links svg { width: 16px; height: 16px; }
+  .proj-empty { grid-column: 1 / -1; text-align: center; color: var(--muted); padding: 40px 0; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    background: #fafafa;
+    color: #08090a;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 12px 24px;
+    border-radius: 11px;
+    transition: transform .18s ease, box-shadow .18s ease;
+    border: none;
+    cursor: pointer;
+  }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(255,255,255,0.12); }
+  .btn svg { width: 17px; height: 17px; }
+  .center { text-align: center; margin-top: 34px; }
+
+  /* ---------- EDU + CERTS + LANG grid ---------- */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .mini-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 22px;
+  }
+  .mini-card h4 { font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted-2); margin-bottom: 14px; font-weight: 700; }
+  .mini-item { margin-bottom: 14px; }
+  .mini-item:last-child { margin-bottom: 0; }
+  .mini-item .t { font-weight: 600; font-size: 0.98rem; }
+  .mini-item .s { color: var(--muted); font-size: 0.86rem; }
+  .lang-bar-wrap { margin-top: 6px; }
+  .lang-bar { height: 6px; background: var(--bg-soft); border-radius: 999px; overflow: hidden; margin-top: 5px; }
+  .lang-bar i { display: block; height: 100%; background: linear-gradient(90deg, var(--accent-2), var(--accent)); border-radius: 999px; }
+
+  /* ---------- CONTRIBUTIONS ---------- */
+  .contrib {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px 24px;
+    overflow-x: auto;
+  }
+  .contrib h4 { font-size: 0.95rem; font-weight: 600; margin-bottom: 16px; color: #e5e7eb; }
+  .contrib img { width: 100%; min-width: 640px; filter: saturate(1.05); }
+
+  /* ---------- CONNECT ---------- */
+  .connect { text-align: center; padding: 80px 0 60px; }
+  .connect h2 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+  }
+  .connect h2 em {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+    background: linear-gradient(120deg, #60a5fa, #3b82f6);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .connect p { color: var(--muted); max-width: 560px; margin: 20px auto 30px; font-size: 1.02rem; }
+
+  /* ---------- FOOTER ---------- */
+  footer { border-top: 1px solid var(--border-soft); padding: 30px 0; text-align: center; color: var(--muted-2); font-size: 0.86rem; }
+
+  /* ---------- DOCK NAV ---------- */
+  .dock {
+    position: fixed;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+    background: rgba(15,17,19,0.8);
+    backdrop-filter: blur(14px);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 8px 10px;
+    z-index: 50;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+  }
+  .dock a {
+    width: 40px; height: 40px;
+    display: grid; place-items: center;
+    border-radius: 999px;
+    color: var(--muted);
+    transition: all .15s ease;
+    position: relative;
+  }
+  .dock a:hover { color: var(--text); background: rgba(255,255,255,0.06); }
+  .dock a svg { width: 19px; height: 19px; }
+  .dock a .tip {
+    position: absolute; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%);
+    background: #1a1d20; border: 1px solid var(--border); color: var(--text);
+    font-size: 0.72rem; font-weight: 600; padding: 4px 9px; border-radius: 7px;
+    white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity .15s ease;
+  }
+  .dock a:hover .tip { opacity: 1; }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 720px) {
+    .hero { grid-template-columns: 1fr; padding-top: 80px; }
+    .avatar { width: 120px; height: 120px; order: -1; }
+    .exp-row { flex-wrap: wrap; }
+    .exp-meta { text-align: left; width: 100%; margin-top: 8px; padding-left: 62px; }
+    .two-col { grid-template-columns: 1fr; }
+    .dock { bottom: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="dock">
+  <a href="#top"><span class="tip">Home</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9.5L12 3l9 6.5V21H3z"/></svg></a>
+  <a href="#experience"><span class="tip">Experience</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg></a>
+  <a href="#skills"><span class="tip">Skills</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg></a>
+  <a href="#projects"><span class="tip">Projects</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h6l2 3h8v13H4z"/></svg></a>
+  <a href="#connect"><span class="tip">Contact</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+</div>
+
+<div id="top" class="wrap">
+
+  <!-- HERO -->
+  <header class="hero">
+    <div>
+      <h1>Hi, I'm <span class="name">Ankita</span></h1>
+      <p class="role">Senior Software Engineer · Building Scalable Backend Systems · Distributed Systems, Cloud &amp; Agentic AI</p>
+      <p class="bio">I'm a backend engineer with 11+ years building reliable systems that just work. Most of my time goes into Java &amp; Spring, designing microservices and event-driven architectures, and deploying on AWS. Lately I've been bringing Agentic AI into everyday engineering workflows.</p>
+      <a class="journey" href="#experience">Read more about my journey <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <div class="socials">
+        <a href="https://github.com/ankita2503" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.36 9.36 0 015 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg></a>
+        <a href="https://www.linkedin.com/in/ankita-singh2" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></a>
+        <a href="mailto:ankita.si2503@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+      </div>
+    </div>
+    <div class="avatar"><img src="ankita.jpg" alt="Ankita Singh" /></div>
+  </header>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <h2 class="sec-title">Experience</h2>
+    <div id="exp-list"></div>
+  </section>
+
+  <!-- EDUCATION / CERTS / LANGUAGES -->
+  <section id="education">
+    <h2 class="sec-title">Education &amp; Credentials</h2>
+    <div class="two-col">
+      <div class="mini-card">
+        <h4>Education</h4>
+        <div class="mini-item">
+          <div class="t">B.Tech, Information Technology</div>
+          <div class="s">Dr. A.P.J. Abdul Kalam University · Lucknow, India</div>
+          <div class="s">2011 — 2015</div>
+        </div>
+      </div>
+      <div class="mini-card">
+        <h4>Certifications</h4>
+        <div class="mini-item">
+          <div class="t">AWS Certified Developer — Associate</div>
+          <div class="s">Amazon Web Services · DVA-C01</div>
+        </div>
+        <div class="mini-item">
+          <div class="t">Claude Certified Architect — Foundations</div>
+          <div class="s">Anthropic</div>
+        </div>
+      </div>
+    </div>
+    <div class="two-col" style="margin-top:14px">
+      <div class="mini-card">
+        <h4>Languages</h4>
+        <div class="mini-item">
+          <div class="t">English <span class="s">· Native / Bilingual</span></div>
+          <div class="lang-bar"><i style="width:100%"></i></div>
+        </div>
+        <div class="mini-item">
+          <div class="t">Hindi <span class="s">· Native / Bilingual</span></div>
+          <div class="lang-bar"><i style="width:100%"></i></div>
+        </div>
+        <div class="mini-item">
+          <div class="t">German <span class="s">· Limited Working</span></div>
+          <div class="lang-bar"><i style="width:40%"></i></div>
+        </div>
+      </div>
+      <div class="mini-card">
+        <h4>Focus Areas</h4>
+        <div class="mini-item">
+          <div class="t">Distributed Systems &amp; Microservices</div>
+          <div class="s">Event-driven architecture, resilience, scalability</div>
+        </div>
+        <div class="mini-item">
+          <div class="t">Agentic &amp; Generative AI</div>
+          <div class="s">Agent orchestration, context engineering, RAG, tool design</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2 class="sec-title">Skills</h2>
+    <div id="skills-grid" class="skills-grid"></div>
+  </section>
+
+  <!-- GITHUB CONTRIBUTIONS -->
+  <section id="contributions">
+    <div class="contrib">
+      <h4>GitHub Contributions</h4>
+      <img src="https://ghchart.rshah.org/3b82f6/ankita2503" alt="Ankita's GitHub contribution graph" loading="lazy" />
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="projects-head">
+      <span class="eyebrow">My Projects</span>
+      <h2>Check out my latest work</h2>
+      <p>Pulled live from my GitHub — from backend services and microservices to distributed-systems experiments. Here's what I've been building.</p>
+    </div>
+    <div id="proj-grid" class="proj-grid">
+      <div class="proj-empty">Loading projects from GitHub…</div>
+    </div>
+    <div class="center">
+      <a class="btn" href="https://github.com/ankita2503?tab=repositories" target="_blank" rel="noopener">
+        View All Projects
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- CONNECT -->
+  <section id="connect" class="connect">
+    <span class="eyebrow">Connect</span>
+    <h2>Let's Build Something<br /><em>Together</em></h2>
+    <p>Whether you have a specific project in mind, want to discuss a potential collaboration, or just want to chat about backend systems, distributed architecture, or AI in engineering — my inbox is always open.</p>
+    <a class="btn" href="mailto:ankita.si2503@gmail.com">
+      Start a Conversation
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+    </a>
+  </section>
+
+</div>
+
+<footer>© <span id="year"></span> Ankita Singh · Berlin, Germany · Built with care.</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* ---------- EXPERIENCE DATA ---------- */
+  const experience = [
+    { company: 'Deutsche Bank', role: 'Senior Software Engineer', date: 'May 2023 — Present', loc: 'Berlin, Germany', current: true, color: '#0018a8', initials: 'DB' },
+    { company: 'Tech Mahindra GmbH', role: 'Senior Software Engineer', date: 'May 2021 — May 2023', loc: 'Hamburg, Germany', color: '#e2231a', initials: 'TM' },
+    { company: 'AMVS Global (Telefónica)', role: 'Software Engineer', date: 'Feb 2020 — May 2021', loc: 'Hamburg, Germany', color: '#0066cc', initials: 'AG' },
+    { company: 'Boeing India', role: 'Software Programmer — Java', date: 'Dec 2018 — Dec 2019', loc: 'Bengaluru, India', color: '#1d4f91', initials: 'B' },
+    { company: 'Aricent Technologies', role: 'Senior Software Engineer', date: 'Mar 2018 — Dec 2018', loc: 'Chennai, India', color: '#6d28d9', initials: 'AT' },
+    { company: 'Tata Consultancy Services', role: 'System Engineer', date: 'Oct 2015 — Mar 2018', loc: 'Chennai, India', color: '#0f4c9b', initials: 'TCS' },
+  ];
+  const expList = document.getElementById('exp-list');
+  expList.innerHTML = experience.map(e => `
+    <div class="card">
+      <div class="exp-row">
+        <div class="logo" style="background:${e.color}">${e.initials}</div>
+        <div class="exp-main">
+          <div class="exp-head">
+            <span class="company">${e.company}</span>
+            ${e.current
+              ? '<span class="badge working"><span class="dot"></span>Working</span>'
+              : '<span class="badge past">Past</span>'}
+          </div>
+          <div class="exp-role">${e.role}</div>
+        </div>
+        <div class="exp-meta">
+          <div class="date">${e.date}</div>
+          <div class="loc">${e.loc}</div>
+        </div>
+      </div>
+    </div>
+  `).join('');
+
+  /* ---------- SKILLS DATA (devicon classes) ---------- */
+  const skills = [
+    ['devicon-java-plain colored', 'Java'],
+    ['devicon-spring-plain colored', 'Spring'],
+    ['devicon-python-plain colored', 'Python'],
+    ['devicon-oracle-original colored', 'Oracle'],
+    ['devicon-mysql-plain colored', 'MySQL'],
+    ['devicon-postgresql-plain colored', 'PostgreSQL'],
+    ['devicon-mongodb-plain colored', 'MongoDB'],
+    ['devicon-neo4j-plain colored', 'Neo4j'],
+    ['devicon-redis-plain colored', 'Redis'],
+    ['devicon-apachekafka-original', 'Kafka'],
+    ['devicon-hibernate-plain colored', 'Hibernate'],
+    ['devicon-docker-plain colored', 'Docker'],
+    ['devicon-kubernetes-plain colored', 'Kubernetes'],
+    ['devicon-amazonwebservices-plain-wordmark colored', 'AWS'],
+    ['devicon-terraform-plain colored', 'Terraform'],
+    ['devicon-jenkins-plain colored', 'Jenkins'],
+    ['devicon-git-plain colored', 'Git'],
+    ['devicon-linux-plain colored', 'Linux'],
+    ['devicon-gradle-plain colored', 'Gradle'],
+    ['devicon-maven-plain colored', 'Maven'],
+    ['devicon-junit-plain colored', 'JUnit'],
+    ['devicon-swagger-plain colored', 'OpenAPI'],
+    ['devicon-json-plain colored', 'REST'],
+  ];
+  document.getElementById('skills-grid').innerHTML = skills.map(([cls, name]) => `
+    <div class="skill"><span class="tip">${name}</span><i class="${cls}"></i></div>
+  `).join('');
+
+  /* ---------- LANGUAGE COLORS ---------- */
+  const langColors = {
+    Java: '#b07219', Python: '#3572A5', JavaScript: '#f1e05a', TypeScript: '#3178c6',
+    HTML: '#e34c26', CSS: '#563d7c', Dockerfile: '#384d54', Shell: '#89e051', Go: '#00ADD8'
+  };
+  const GH = svg => svg;
+  const iconGit = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.36 9.36 0 015 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg>';
+  const iconLink = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.07 0l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.07 0l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>';
+  const iconFolder = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h6l2 3h8v11H4z"/></svg>';
+
+  /* ---------- PROJECTS (live from GitHub) ---------- */
+  async function loadProjects() {
+    const grid = document.getElementById('proj-grid');
+    try {
+      const res = await fetch('https://api.github.com/users/ankita2503/repos?per_page=100&sort=updated');
+      if (!res.ok) throw new Error('GitHub API ' + res.status);
+      let repos = await res.json();
+
+      // keep only real (non-fork) repos, drop the profile/pages repos
+      const skip = ['ankita2503.github.io', 'ankita.github.io', 'Certificates'];
+      repos = repos.filter(r => !r.fork && !r.archived && !skip.includes(r.name));
+
+      // rank: stars first, then most recently pushed
+      repos.sort((a, b) =>
+        (b.stargazers_count - a.stargazers_count) ||
+        (new Date(b.pushed_at) - new Date(a.pushed_at))
+      );
+
+      const top = repos.slice(0, 6);
+      if (!top.length) {
+        grid.innerHTML = '<div class="proj-empty">No public projects yet — check back soon.</div>';
+        return;
+      }
+
+      grid.innerHTML = top.map(r => {
+        const name = r.name.replace(/[-_]/g, ' ');
+        const desc = r.description || 'A project I built — open on GitHub for details.';
+        const lang = r.language;
+        const dot = langColors[lang] || '#3b82f6';
+        const homepage = r.homepage && r.homepage.trim();
+        return `
+          <div class="proj">
+            <div class="proj-top">
+              <div class="proj-icon">${iconFolder}</div>
+              <span class="proj-stars">★ ${r.stargazers_count}</span>
+            </div>
+            <h3>${name}</h3>
+            <p>${desc}</p>
+            <div class="proj-foot">
+              <span class="proj-lang">${lang ? `<span class="lang-dot" style="background:${dot}"></span>${lang}` : '&nbsp;'}</span>
+              <div class="proj-links">
+                <a href="${r.html_url}" target="_blank" rel="noopener" aria-label="GitHub repo">${iconGit}</a>
+                ${homepage ? `<a href="${homepage}" target="_blank" rel="noopener" aria-label="Live site">${iconLink}</a>` : ''}
+              </div>
+            </div>
+          </div>`;
+      }).join('');
+    } catch (err) {
+      grid.innerHTML = `<div class="proj-empty">Couldn't load live projects right now.<br />
+        <a class="journey" style="justify-content:center;margin-top:10px" href="https://github.com/ankita2503?tab=repositories" target="_blank" rel="noopener">Browse them on GitHub →</a></div>`;
+    }
+  }
+  loadProjects();
+</script>
+</body>
 </html>
