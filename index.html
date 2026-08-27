@@ -99,11 +99,17 @@
     font-size: 1.02rem;
     max-width: 540px;
   }
+  .journey-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 22px;
+  }
   .hero .journey {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    margin-top: 22px;
     color: var(--accent-2);
     font-weight: 600;
     font-size: 0.98rem;
@@ -369,8 +375,72 @@
     padding: 22px 24px;
     overflow-x: auto;
   }
-  .contrib h4 { font-size: 0.95rem; font-weight: 600; margin-bottom: 16px; color: #e5e7eb; }
-  .contrib img { width: 100%; min-width: 640px; filter: saturate(1.05); }
+  .contrib h4 { font-size: 0.95rem; font-weight: 600; color: #e5e7eb; }
+  .contrib-head {
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 16px; margin-bottom: 16px; flex-wrap: wrap;
+  }
+  .contrib-head .count { font-size: 0.82rem; color: var(--muted-2); font-weight: 500; }
+  .contrib-fallback { width: 100%; min-width: 640px; }
+
+  /* GitHub-style contribution calendar */
+  .cal { --sq: 11px; --gap: 3px; min-width: 700px; }
+  .cal-months {
+    display: grid;
+    grid-auto-rows: 14px;
+    gap: var(--gap);
+    margin-left: 30px;
+    font-size: 0.68rem;
+    color: var(--muted);
+  }
+  .cal-months span { white-space: nowrap; line-height: 14px; }
+  .cal-main { display: flex; gap: var(--gap); }
+  .cal-days {
+    display: grid;
+    grid-template-rows: repeat(7, var(--sq));
+    gap: var(--gap);
+    width: 27px;
+    font-size: 0.68rem;
+    color: var(--muted);
+  }
+  .cal-days span { line-height: var(--sq); }
+  .cal-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(7, var(--sq));
+    grid-auto-columns: var(--sq);
+    gap: var(--gap);
+  }
+  .cal-grid i {
+    display: block;
+    width: var(--sq); height: var(--sq);
+    border-radius: 2px;
+    outline: 1px solid rgba(255, 255, 255, 0.05);
+    outline-offset: -1px;
+  }
+  .cal-grid i.pad { outline: none; background: transparent; }
+  .cal-grid i.L0 { background: #161b22; }
+  .cal-grid i.L1 { background: #0e4429; }
+  .cal-grid i.L2 { background: #006d32; }
+  .cal-grid i.L3 { background: #26a641; }
+  .cal-grid i.L4 { background: #39d353; }
+  .cal-legend {
+    display: flex; align-items: center; justify-content: flex-end;
+    gap: 4px; margin-top: 10px;
+    font-size: 0.68rem; color: var(--muted);
+  }
+  .cal-legend i {
+    width: var(--sq, 11px); height: var(--sq, 11px);
+    border-radius: 2px;
+    outline: 1px solid rgba(255, 255, 255, 0.05);
+    outline-offset: -1px;
+  }
+  .cal-legend i.L0 { background: #161b22; }
+  .cal-legend i.L1 { background: #0e4429; }
+  .cal-legend i.L2 { background: #006d32; }
+  .cal-legend i.L3 { background: #26a641; }
+  .cal-legend i.L4 { background: #39d353; }
+  .cal-legend .lg-lbl { margin: 0 3px; }
 
   /* ---------- CONNECT ---------- */
   .connect { text-align: center; padding: 80px 0 60px; }
@@ -453,9 +523,12 @@
   <header class="hero">
     <div>
       <h1>Hi, I'm <span class="name">Ankita</span></h1>
-      <p class="role">Senior Software Engineer · Building Scalable Backend Systems · Distributed Systems, Cloud &amp; Agentic AI</p>
+      <p class="role">Senior Software Engineer · Driving Architectural Decisions for Distributed, Cloud-Native Systems</p>
       <p class="bio">I'm a backend engineer with 11+ years building reliable systems that just work. Most of my time goes into Java &amp; Spring, designing microservices and event-driven architectures, and deploying on AWS. Lately I've been bringing Agentic AI into everyday engineering workflows.</p>
-      <a class="journey" href="#experience">Read more about my journey <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <div class="journey-links">
+        <a class="journey" href="#experience">Read more about my journey <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="journey" href="#projects">Check out my latest work <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
       <div class="socials">
         <a href="https://github.com/ankita2503" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.36 9.36 0 015 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg></a>
         <a href="https://www.linkedin.com/in/ankita-singh2" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></a>
@@ -534,8 +607,11 @@
   <!-- GITHUB CONTRIBUTIONS -->
   <section id="contributions">
     <div class="contrib">
-      <h4>GitHub Contributions</h4>
-      <img src="https://ghchart.rshah.org/3b82f6/ankita2503" alt="Ankita's GitHub contribution graph" loading="lazy" />
+      <div class="contrib-head">
+        <h4>GitHub Contributions</h4>
+        <span class="count" id="contrib-count"></span>
+      </div>
+      <div id="contrib-cal"></div>
     </div>
   </section>
 
@@ -699,6 +775,94 @@
     }
   }
   loadProjects();
+
+  /* ---------- GITHUB CONTRIBUTION CALENDAR ---------- */
+  const GH_USER = 'ankita2503';
+  const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+  function parseDay(iso) {
+    const [y, m, d] = iso.split('-').map(Number);
+    return new Date(y, m - 1, d);
+  }
+
+  function contribFallback() {
+    document.getElementById('contrib-cal').innerHTML =
+      '<img class="contrib-fallback" alt="GitHub contribution graph for ' + GH_USER + '" ' +
+      'src="https://ghchart.rshah.org/39d353/' + GH_USER + '" loading="lazy" />';
+  }
+
+  function renderCalendar(days, total) {
+    // Pad the first week so column 1 starts on a Sunday, like GitHub.
+    const lead = parseDay(days[0].date).getDay();
+    const cells = [];
+    for (let i = 0; i < lead; i++) cells.push(null);
+    days.forEach(d => cells.push(d));
+    while (cells.length % 7 !== 0) cells.push(null);
+    const weeks = cells.length / 7;
+
+    // Month labels sit above the first week that lands in a new month.
+    const labels = [];
+    let prevMonth = -1;
+    for (let w = 0; w < weeks; w++) {
+      const first = cells.slice(w * 7, w * 7 + 7).find(Boolean);
+      if (!first) continue;
+      const mo = parseDay(first.date).getMonth();
+      if (mo !== prevMonth) {
+        prevMonth = mo;
+        labels.push({ week: w, month: mo });
+      }
+    }
+    // Drop a trailing label with too little room to read.
+    if (labels.length > 1 && weeks - labels[labels.length - 1].week < 3) labels.pop();
+
+    let monthsHtml = '';
+    labels.forEach((l, i) => {
+      const end = i + 1 < labels.length ? labels[i + 1].week : weeks;
+      monthsHtml += '<span style="grid-column:' + (l.week + 1) + ' / ' + (end + 1) + '">' +
+        MONTHS[l.month] + '</span>';
+    });
+
+    let gridHtml = '';
+    cells.forEach(c => {
+      if (!c) { gridHtml += '<i class="pad"></i>'; return; }
+      const dt = parseDay(c.date);
+      const label = (c.count === 1 ? '1 contribution' : c.count + ' contributions') +
+        ' on ' + MONTHS[dt.getMonth()] + ' ' + dt.getDate() + ', ' + dt.getFullYear();
+      gridHtml += '<i class="L' + c.level + '" title="' + label + '"></i>';
+    });
+
+    document.getElementById('contrib-cal').innerHTML =
+      '<div class="cal">' +
+        '<div class="cal-months" style="grid-template-columns:repeat(' + weeks + ',var(--sq))">' +
+          monthsHtml +
+        '</div>' +
+        '<div class="cal-main">' +
+          '<div class="cal-days"><span></span><span>Mon</span><span></span><span>Wed</span>' +
+          '<span></span><span>Fri</span><span></span></div>' +
+          '<div class="cal-grid">' + gridHtml + '</div>' +
+        '</div>' +
+        '<div class="cal-legend">Less<span class="lg-lbl"></span>' +
+          '<i class="L0"></i><i class="L1"></i><i class="L2"></i><i class="L3"></i><i class="L4"></i>' +
+          '<span class="lg-lbl"></span>More</div>' +
+      '</div>';
+
+    document.getElementById('contrib-count').textContent =
+      (total === 1 ? '1 contribution' : total.toLocaleString() + ' contributions') + ' in the last year';
+  }
+
+  async function loadContributions() {
+    try {
+      const res = await fetch('https://github-contributions-api.jogruber.de/v4/' + GH_USER + '?y=last');
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const data = await res.json();
+      const days = data.contributions;
+      if (!Array.isArray(days) || !days.length) throw new Error('no data');
+      renderCalendar(days, (data.total && data.total.lastYear) || 0);
+    } catch (e) {
+      contribFallback();
+    }
+  }
+  loadContributions();
 </script>
 </body>
 </html>
